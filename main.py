@@ -1,4 +1,5 @@
 from school_schedule.student import Student
+from school_schedule.high_school_student import HighSchoolStudent
 
 # first instance
 quinn = Student(
@@ -14,12 +15,12 @@ quinn = Student(
                 ]
             )
 
-quinn.add_class("Painting")
-quinn.get_num_classes()
-print(quinn.summary())
+# quinn.add_class("Painting")
+# quinn.get_num_classes()
+# print(quinn.summary())
 
 # second instance
-claire = Student(
+claire = HighSchoolStudent(
                 "Claire", 
                 "freshmen", 
                 [
@@ -29,7 +30,9 @@ claire = Student(
                     "Gym", 
                     "Earth Science", 
                     "Painting"
-                ]
+                ],
+                True, 
+                ["Algorithms Club"]
             )
 
 claire.get_num_classes()
